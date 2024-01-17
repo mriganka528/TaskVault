@@ -1,0 +1,197 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/homeBG.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.heading {
+    margin-top: 7rem;
+}
+
+.heading h1 {
+    background: -webkit-linear-gradient(87deg, #ffffff 0%, #000000 100%);
+    font-size: 3rem;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .44rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 11rem;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    width: 25rem;
+}
+
+.container .inp {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid rgba(99, 100, 100, 0.272);
+    outline: none;
+    margin-top: 21px;
+    border-radius: 5px;
+    color: rgba(224, 224, 224, 0.62);
+    background: rgba(41, 41, 41);
+    font-size: 1.5rem;
+}
+
+.container .content {
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    pointer-events: none;
+    color: rgba(131, 141, 141, 0.272);
+    transition: 0.5s;
+}
+
+.container input:valid~span,
+.container input:focus~span {
+    color: rgb(202, 202, 202);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.9em;
+    padding: 0 10px;
+    background: rgb(41, 41, 41);
+    border-left: 2px solid rgba(255, 255, 255, 0.272);
+    border-right: 2px solid rgba(250, 250, 250, 0.272);
+}
+
+.add_button {
+    display: inline-block;
+    margin-inline: 2rem;
+    height: 7rem;
+    width: 10rem;
+}
+
+.plusButton {
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -20%);
+    --plus_sideLength: 2.9rem;
+    --plus_topRightTriangleSideLength: 0.9rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: .5rem;
+    width: var(--plus_sideLength);
+    height: var(--plus_sideLength);
+    background-color: #2e2e2e;
+    overflow: hidden;
+}
+
+.plusButton::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 var(--plus_topRightTriangleSideLength) var(--plus_topRightTriangleSideLength) 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.plusButton:hover {
+    cursor: pointer;
+}
+
+.plusButton:hover::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+}
+
+.plusButton:focus-visible::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+}
+
+.plusButton>.plusIcon {
+    fill: white;
+    width: calc(var(--plus_sideLength) * 0.7);
+    height: calc(var(--plus_sideLength) * 0.7);
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.plusButton:hover>.plusIcon {
+    fill: black;
+    transform: rotate(180deg);
+}
+
+.plusButton:focus-visible>.plusIcon {
+    fill: black;
+    transform: rotate(180deg);
+}
+
+.alltask {
+    margin: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 15rem;
+}
+
+.alltask h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: rgb(173, 173, 173);
+    background: -webkit-linear-gradient(87deg, #ffffff 0%, #000000 100%);
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width:550px) {
+    .alltask h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:450px) {
+
+    .heading h1 {
+        font-size: 2.3rem;
+    }
+    .form {
+        padding-left: 10rem;
+    }
+    .alltask h1 {
+        font-size: 2rem;
+        margin-right: 2.5rem;
+
+    }
+}
+
+@media(max-width:375px) {
+    .alltask h1 {
+        margin-right: 5rem;
+    }
+    .form {
+        padding-left: 9rem;
+    }
+    .heading h1 {
+        font-size: 2rem;
+    letter-spacing: .3rem;
+
+    }
+}
+@media (max-width:350px) {
+    .alltask h1 {
+        margin-right: 12rem;
+    }
+}
