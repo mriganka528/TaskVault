@@ -35,35 +35,42 @@ function Home() {
                     <p id='dynamicText'>
                         TaskVault is your all-in-one task management solution, offering a secure and intuitive platform for seamless organization. With a user-friendly interface, smart task sorting, and cross-platform accessibility, TaskVault empowers you to effortlessly prioritize and accomplish your goals. Collaborate with others, track your progress, and gain valuable insights into your productivity. TaskVault is not just a todo list app; it's your personal fortress for productivity, helping you conquer tasks and unlock your full potential. Welcome to a smarter way of managing your tasks with TaskVault!</p>
                     <Link className={Styles.button} to='/addtodo' >
-                        <span className={Styles.buttonContent}>Visit us</span>
+                        <span className={Styles.buttonContent}>Click here</span>
                     </Link>
                 </div>
             </center>
             <footer className={Styles.background}>
                 <span className={Styles.socialMediaButtons}>
                     <span className={Styles.socialMediaButton}>
-                        <img
-                            alt="Instagram"
-                            src={insta_img}
-                        />
+                        <Link to="/">
+                            <img
+                                alt="Instagram"
+                                src={insta_img}
+                            />
+                        </Link>
                     </span>
                     <span className={Styles.socialMediaButton}>
-                        <img
-                            alt="Twitter"
-                            src={twitter_img}
-                        />
+                        <Link to="/">
+                            <img
+                                alt="Twitter"
+                                src={twitter_img}
+                            />
+                        </Link>
                     </span>
                     <span className={Styles.socialMediaButton}>
-                        <img
-                            alt="Youtube"
-                            src={youtube_img}
-                        />
+                        <Link to="/">
+                            <img
+                                alt="Youtube"
+                                src={youtube_img}
+                            />
+                        </Link>
                     </span>
                     <span className={Styles.socialMediaButton}>
-                        <img
+                        <Link to="https://www.linkedin.com/in/mriganka-sarma-987317231" target='_blank'> <img
                             alt="LinkedIn"
                             src={linkedin_img}
-                        />
+                        /></Link>
+
                     </span>
                 </span>
             </footer>
