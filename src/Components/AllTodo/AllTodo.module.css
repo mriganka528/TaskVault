@@ -360,6 +360,10 @@
         transform: translateX(80px);
         width: 30px;
     }
+    .deltAllbutton:hover .button__icon {
+        width: 108px;
+        transform: translateX(-30);
+    }
 }
 
 @media (max-width:400px) {
