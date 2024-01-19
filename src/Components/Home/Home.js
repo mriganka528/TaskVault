@@ -33,7 +33,7 @@ function Home() {
                 <div className={Styles.left}>
                     <h1>Task Vault</h1>
                     <p id='dynamicText'>
-                        TaskVault is your all-in-one task management solution, offering a secure and intuitive platform for seamless organization. With a user-friendly interface, smart task sorting, and cross-platform accessibility, TaskVault empowers you to effortlessly prioritize and accomplish your goals. Collaborate with others, track your progress, and gain valuable insights into your productivity. TaskVault is not just a todo list app; it's your personal fortress for productivity, helping you conquer tasks and unlock your full potential. Welcome to a smarter way of managing your tasks with TaskVault!</p>
+                       TaskVault is your essential task management solution, offering a secure platform for streamlined organization. With a user-friendly interface, collaborative features, and goal tracking, TaskVault empowers you to efficiently prioritize and achieve objectives. More than a to-do list app, it's your key to enhanced productivity</p>
                     <Link className={Styles.button} to='/addtodo' >
                         <span className={Styles.buttonContent}>Click here</span>
                     </Link>
