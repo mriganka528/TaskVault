@@ -17,7 +17,7 @@ function Add() {
     const addTodoHandaler = (e) => {
         e.preventDefault();
         if (input.length < 3) {
-            alert("Input have less than 3 character")
+            alert("Input must have more than 3 characters")
         }
         else {
             dispatch(addTodo(input));
